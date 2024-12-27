@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My weather app</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#222831] flex justify-center items-center min-h-screen">
+    <div class="flex">
+      <div class="left w-[280px] h-[380px]">
+        <div class="relative">
+          <img
+            class="w-full h-full object-cover rounded-lg"
+            src="./assets/pexels-jess-vide-4321815.jpg"
+            alt="beachimg"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-[#88EBEF] to-[#5460E6] opacity-55 rounded-lg"
+          ></div>
+          <div class="absolute inset-0 left-7 top-6">
+            <p id="day">Tuesday</p>
+            <p id="date">20 Jun 2024</p>
+          </div>
+          <div class="absolute bottom-16 left-10">
+            <p id="temp">29 d</p>
+            <p id="condition">Sunny</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="right mt-4 pl-11 pr-11 pt-7 bg-[#1e1e1e] h-[320px] rounded-lg text-white flex flex-col justify-between"
+      >
+        <div>
+          <div>
+            <div class="flex justify-between">
+              <p>Precipitation</p>
+              <p id="precip">0%</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Humidty</p>
+              <p id="humidity">0%</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Wind</p>
+              <p id="wind">0%</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input
+            id="loc-input"
+            type="text"
+            class="bg-[#2b2b2b] text-white p-2 rounded-lg w-auto block mb-3 focus:outline-none"
+          />
+          <button
+            class="bg-gradient-to-r from-cyan-400 to-blue-600 text-white font-bold py-2 px-4 rounded-lg opacity-55 mb-5 w-full"
+            id="loc-btn"
+          >
+            Change Location
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
